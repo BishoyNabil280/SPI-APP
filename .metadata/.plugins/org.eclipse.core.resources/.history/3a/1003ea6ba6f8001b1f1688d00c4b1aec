@@ -1,0 +1,28 @@
+/******************************************************************************
+ *
+ * Module: SPI
+ *
+ * Created On: 7/8/2021
+ *
+ * Author: Bishoy Nabil
+ *
+ *******************************************************************************/
+
+#include "../MCAL/SPI/spi.h"
+#include "../MCAL/DIO/DIO.h"
+#include "../MCAL/UART/UART.h"
+
+
+int main(void){
+
+	uint8_t Str[30];
+	UART_init();
+	SPI_initMaster();
+
+	while(1)
+	{
+		UART_receiveString(Str);
+		SPI_SendString(Str);
+	}
+	return 0;
+}

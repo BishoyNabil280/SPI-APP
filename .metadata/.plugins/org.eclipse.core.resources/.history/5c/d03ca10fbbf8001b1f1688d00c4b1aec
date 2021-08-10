@@ -1,0 +1,26 @@
+ /******************************************************************************
+ *
+ * Module: SPI
+ * Author: Bishoy Nabil
+ *
+ *******************************************************************************/
+
+#ifndef SPI_H_
+#define SPI_H_
+
+#include "../../compiler.h"
+#include "../../micro_config.h"
+#include "../../common_macros.h"
+#include "spi_registers.h"
+#include "../DIO/DIO.h"
+
+/*********************		APIs     ***********************/
+void SPI_initMaster(void); 
+void SPI_initSlave(void);
+void SPI_sendByte(const uint8_t data);
+uint8_t SPI_recieveByte(void);
+void SPI_SendString(const uint8_t *Str);
+void SPI_SendLimitString(const uint8_t *Str, uint8_t size);
+void SPI_ReceiveString(uint8_t *Str);
+void SPI_ReceiveLimitString(uint8_t *Str, uint8_t size);
+#endif

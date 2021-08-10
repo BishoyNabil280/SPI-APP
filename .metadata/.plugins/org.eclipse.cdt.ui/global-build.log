@@ -1,0 +1,2243 @@
+??:??:?? **** Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:17: warning: DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../MCAL/DIO/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/DIO/DIO.d" -MT"MCAL/DIO/DIO.o" -c -o "MCAL/DIO/DIO.o" "../MCAL/DIO/DIO.c"
+Finished building: ../MCAL/DIO/DIO.c
+ 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:17: warning: DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:22: warning: MCAL/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:22: warning: MCAL/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:26: warning: MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:26: warning: MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../MCAL/DIO/DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/DIO/DIO.d" -MT"MCAL/DIO/DIO.o" -c -o "MCAL/DIO/DIO.o" "../MCAL/DIO/DIO.c"
+Finished building: ../MCAL/DIO/DIO.c
+ 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2756 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:26: warning: MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:26: warning: MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2756 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:26: warning: MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:26: warning: MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2756 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2756 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2756 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2738 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2756 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/UART/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/UART/uart.d" -MT"MCAL/UART/uart.o" -c -o "MCAL/UART/uart.o" "../MCAL/UART/uart.c"
+In file included from ../MCAL/UART/uart.h:16,
+                 from ../MCAL/UART/uart.c:8:
+../MCAL/UART/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/UART/uart.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3082 bytes (9.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/UART/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/UART/uart.d" -MT"MCAL/UART/uart.o" -c -o "MCAL/UART/uart.o" "../MCAL/UART/uart.c"
+In file included from ../MCAL/UART/uart.h:16,
+                 from ../MCAL/UART/uart.c:8:
+../MCAL/UART/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/UART/uart.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3100 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3108 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3100 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/master.c: In function 'main':
+../APP/master.c:22: warning: implicit declaration of function 'SPI_SendString'
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3108 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'main':
+../APP/slave.c:21: warning: implicit declaration of function 'SPI_ReceiveString'
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3108 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3108 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'main':
+../APP/slave.c:21: warning: implicit declaration of function 'SPI_ReceiveString'
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3108 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3114 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3114 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/master.c: In function 'main':
+../APP/master.c:25: warning: implicit declaration of function 'SPI_SendString'
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3114 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'main':
+../APP/slave.c:24: warning: implicit declaration of function 'SPI_ReceiveString'
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3114 bytes (9.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3318 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3318 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/master.c: In function 'main':
+../APP/master.c:25: error: too few arguments to function 'SPI_SendLimitString'
+make: *** [APP/master.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'main':
+../APP/slave.c:24: error: too few arguments to function 'SPI_ReceiveLimitString'
+make: *** [APP/slave.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/master.c: In function 'main':
+../APP/master.c:25: warning: large integer implicitly truncated to unsigned type
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3320 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'main':
+../APP/slave.c:24: warning: large integer implicitly truncated to unsigned type
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3320 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3320 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3320 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3320 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3320 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3364 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3364 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/master.c: In function 'main':
+Finished building: ../APP/master.c
+../APP/master.c:26: warning: large integer implicitly truncated to unsigned type
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3376 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'main':
+../APP/slave.c:25: warning: large integer implicitly truncated to unsigned type
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3376 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/master.c: In function 'main':
+../APP/master.c:26: warning: large integer implicitly truncated to unsigned type
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3376 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'main':
+../APP/slave.c:25: warning: large integer implicitly truncated to unsigned type
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3376 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3376 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3376 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/master.c: In function 'System_Update':
+../APP/master.c:20: error: 'Str' undeclared (first use in this function)
+../APP/master.c:20: error: (Each undeclared identifier is reported only once
+../APP/master.c:20: error: for each function it appears in.)
+../APP/master.c:22: error: 'i' undeclared (first use in this function)
+../APP/master.c: In function 'main':
+../APP/master.c:31: warning: unused variable 'Str'
+make: *** [APP/master.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'System_Update':
+../APP/slave.c:21: error: 'i' undeclared (first use in this function)
+../APP/slave.c:21: error: (Each undeclared identifier is reported only once
+../APP/slave.c:21: error: for each function it appears in.)
+../APP/slave.c:21: error: 'Str' undeclared (first use in this function)
+../APP/slave.c: In function 'main':
+../APP/slave.c:31: warning: unused variable 'Str'
+make: *** [APP/slave.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/master.c: In function 'System_Update':
+../APP/master.c:23: error: 'i' undeclared (first use in this function)
+../APP/master.c:23: error: (Each undeclared identifier is reported only once
+../APP/master.c:23: error: for each function it appears in.)
+make: *** [APP/master.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'System_Update':
+../APP/slave.c:22: error: 'i' undeclared (first use in this function)
+../APP/slave.c:22: error: (Each undeclared identifier is reported only once
+../APP/slave.c:22: error: for each function it appears in.)
+make: *** [APP/slave.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3446 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'System_Update':
+../APP/slave.c:26: error: 'i' undeclared (first use in this function)
+../APP/slave.c:26: error: (Each undeclared identifier is reported only once
+../APP/slave.c:26: error: for each function it appears in.)
+make: *** [APP/slave.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3446 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3458 bytes (10.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3446 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../APP/slave.c: In function 'System_Update':
+../APP/slave.c:24: error: too many arguments to function 'SPI_recieveByte'
+make: *** [APP/slave.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3446 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3466 bytes (10.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3456 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3476 bytes (10.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3456 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3474 bytes (10.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../MCAL/SPI/spi.c:44:18: error: empty character constant
+make: *** [MCAL/SPI/spi.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../MCAL/SPI/spi.c:44:18: error: empty character constant
+make: *** [MCAL/SPI/spi.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+../MCAL/SPI/spi.c:44:18: error: empty character constant
+make: *** [MCAL/SPI/spi.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+In file included from ../MCAL/SPI/spi.h:12,
+                 from ../MCAL/SPI/spi.c:8:
+../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3146 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3150 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3150 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        257 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3150 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        256 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Building file: ../APP/slave.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/slave.d" -MT"APP/slave.o" -c -o "APP/slave.o" "../APP/slave.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/slave.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/slave.c
+ 
+Building target: Slave.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave.map -mmcu=atmega32 -o "Slave.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/slave.o   
+Finished building target: Slave.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave.elf  >"Slave.lss"
+Finished building: Slave.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        256 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        256 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        256 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

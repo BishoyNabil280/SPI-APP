@@ -1,0 +1,62 @@
+ /******************************************************************************
+ *
+ * Module: SPI
+ * Author: Bishoy Nabil
+ *
+ *******************************************************************************/
+
+#include "spi.h"
+
+void SPI_initMaster(void) 
+{
+	DDRB |= (1<<PB4);  //SS(PB4)   --> Output
+	DDRB |= (1<<PB5);  //MOSI(PB5) --> Output
+	DDRB &= (~(1<<PB6)); //MISO(PB6) --> Input
+	DDRB |= (1<<PB7);  //SCK(PB7) --> Output
+	
+	SPCR = (1<<SPE) | (1<<MSTR); //Clock = FOSC/4
+}
+
+void SPI_initSlave(void)
+{ 
+	DDRB &= (~(1<<PB4));  //SS(PB4)   --> Input
+	DDRB &= (~(1<<PB5));  //MOSI(PB5) --> Input
+	DDRB |= (1<<PB6);		//MISO(PB6) --> Output
+	DDRB &= (~(1<<PB7));  //SCK(PB7) --> Input
+	SPCR = (1<<SPE); // just enable SPI + choose SPI clock = Fosc/4
+}
+
+void SPI_sendByte(const uint8_t data)
+{
+	SPDR = data; //Adding data to register
+	while(BIT_IS_CLEAR(SPSR,SPIF)){} //wait until data is sent correctly (flag =1)
+}
+
+uint8_t SPI_recieveByte(void)
+{
+   while(BIT_IS_CLEAR(SPSR,SPIF)){} //wait until SPI data is received correctly
+   return SPDR; //return the received data from SPI data register
+}
+
+void SPI_SendString(const uint8_t *Str)
+{
+	uint8_t i = 0;
+	while(Str[i] != '\0')
+	{
+		SPI_sendByte(Str[i]);
+		i++;
+	}
+	SPI_sendByte('#');
+}
+
+void SPI_ReceiveString(char *Str)
+{
+	uint8_t i = 0;
+	Str[i] = SPI_recieveByte();
+	while(Str[i] != '#')
+	{
+		i++;
+		Str[i] = SPI_recieveByte();
+	}
+	Str[i] = '\0';
+}

@@ -1,0 +1,37 @@
+??:??:?? **** Incremental Build of configuration Debug for project Master ****
+make all 
+Building file: ../APP/master.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/master.d" -MT"APP/master.o" -c -o "APP/master.o" "../APP/master.c"
+In file included from ../APP/../MCAL/SPI/spi.h:12,
+                 from ../APP/master.c:11:
+../APP/../MCAL/SPI/../../micro_config.h:14:28: warning: ./MCAL/DIO/DIO.h: No such file or directory
+Finished building: ../APP/master.c
+ 
+Building target: Master.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master.map -mmcu=atmega32 -o "Master.elf"  ./MCAL/UART/uart.o  ./MCAL/SPI/spi.o  ./MCAL/DIO/DIO.o  ./APP/master.o   
+Finished building target: Master.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master.elf  >"Master.lss"
+Finished building: Master.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3154 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:        256 bytes (12.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+??:??:?? Build Finished. 0 errors, 1 warnings. (took 351ms)
+

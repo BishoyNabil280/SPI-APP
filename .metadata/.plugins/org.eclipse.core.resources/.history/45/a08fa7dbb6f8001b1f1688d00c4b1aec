@@ -1,0 +1,42 @@
+/******************************************************************************
+ *
+ * Module: SPI
+ *
+ * Created On: 7/8/2021
+ *
+ * Author: Bishoy Nabil
+ *
+ *******************************************************************************/
+
+#include "../MCAL/SPI/spi.h"
+#include "../MCAL/DIO/DIO.h"
+#include "../MCAL/UART/UART.h"
+
+#define STR_SIZE 256
+uint8_t counter;
+
+int main(void){
+
+	uint8_t Str[STR_SIZE];
+	UART_init();
+	SPI_initSlave();
+
+	while(1)
+	{
+		SPI_ReceiveLimitString(Str,STR_SIZE);
+		UART_sendString(Str);
+
+	}
+	return 0;
+}
+
+void System_Update()
+{
+	UART_receiveString(Str);
+		counter=0;
+		while( ( i < (STR_SIZE-1) ) && (Str[i] != '\0') )
+		{
+			SPI_sendByte(Str[i]);
+		}
+		SPI_recieveByte('#');
+}
